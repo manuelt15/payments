@@ -1,12 +1,54 @@
-# React + Vite
+# 💳 Payments App (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación **frontend en React (Vite)** para la gestión de pagos.  
+Se conecta a una API REST (Express + MongoDB) para **crear, listar y eliminar pagos**.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Características
 
-## Expanding the ESLint configuration
+- Listado dinámico de pagos obtenidos desde la API.  
+- Agregar nuevos pagos mediante un formulario.  
+- Eliminar pagos existentes.  
+- Animaciones con **Framer Motion**.  
+- Alertas modernas con **SweetAlert2**.  
+- Estilos personalizados con CSS (`Main.css`).  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Estructura del Proyecto
+
+```bash
+src/
+├── components/
+│   └── Main.jsx       # Componente principal de la app
+├── assets/            # Imágenes estáticas (user.png, pay.png, etc.)
+├── Main.css           # Estilos principales
+└── main.jsx           # Punto de entrada de React
+
+🛠️ Tecnologías Usadas
+
+React (Vite)
+
+Framer Motion
+ (animaciones)
+
+SweetAlert2
+ (alertas)
+
+Fetch API
+ (peticiones HTTP)
+
+CSS Modules / Custom CSS
+
+📸 Vista Previa
+
+Ejemplo de la UI con tarjetas de pagos y formulario emergente.
+
+📌 Notas
+
+Necesitas tener corriendo la API Express en {VITE_EXPRESS} para que funcione.
+
+Los logos y nombres de tiendas se asignan de manera aleatoria en cada render.
+
+Si quieres persistir el usuario, puedes conectar con un sistema de autenticación en el futuro.
