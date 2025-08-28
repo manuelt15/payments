@@ -1,0 +1,255 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Centrado del contenido */
+body {
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* espacio en móviles */
+}
+
+/* Contenedor principal */
+.main {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+
+/* Información del usuario */
+.datos {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ccc;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.nombre {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Encabezado de gastos */
+.gastos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.h3 {
+  font-size: 1.3rem;
+  color: #444;
+  margin: 1rem 0;
+}
+
+.btn {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* Lista de gastos */
+.wrapper-gastos {
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f3f6;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  transition: transform 0.2s;
+  flex-wrap: wrap;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.src {
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 8px;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket {
+  font-weight: 600;
+  color: #333;
+}
+
+.lugar {
+  font-size: 0.9rem;
+  color: #9a9a9a;
+}
+
+/* Precio y botón delete */
+.price {
+  text-align: right;
+  min-width: 80px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+}
+
+.euro {
+  font-weight: bold;
+  color: #e53935;
+  margin-bottom: 6px;
+}
+
+.delete {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.3s;
+}
+
+.delete:hover {
+  background-color: #d32f2f;
+}
+
+/* Centrado del formulario */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f7fa;
+}
+
+/* Estilos del formulario */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  padding: 24px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs y labels */
+.form input[type="text"],
+.form input[type="number"],
+.form input[type="submit"] {
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.form input[type="text"]:focus,
+.form input[type="number"]:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.form label {
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: #d3d3d3;
+}
+
+/* Botón submit */
+.form input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+/* Responsive para móviles muy pequeños */
+@media (max-width: 400px) {
+  .datos {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .img {
+    margin-bottom: 10px;
+  }
+
+  .gastos {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .price {
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn, .delete {
+    width: 100%;
+    text-align: center;
+  }
+}
